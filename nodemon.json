@@ -1,0 +1,7 @@
+{
+    "verbose": false,
+    "watch": ["src"],
+    "ext": "ts",
+    "ignore": ["*.test.js", "fixtures/*"],
+    "exec": "npm run start"
+  }
