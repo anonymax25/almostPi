@@ -2,9 +2,7 @@ const almostPi = async (resolution: number = 10000): Promise<number> => {
   const radius = 1;
   let counter = 0;
   Array.from({ length: resolution }).forEach(() => {
-    if (
-      distance(0, 0, Math.random() * 2 * radius - radius, Math.random() * 2 * radius - radius) < 1
-    ) {
+    if (distance(0, 0, Math.random() * 2 * radius - radius, Math.random() * 2 * radius - radius) < 1) {
       counter++;
     }
   });
