@@ -16,12 +16,6 @@
     "test": "jest --config jestconfig.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm version",
-    "version": "npm version && npm run format && git add -A src",
-    "postversion": "git push && git push --tags",
-    "patch": "npm version patch && npm publish",
-    "minor": "npm version minor && npm publish",
-    "major": "npm version minor && npm publish"
   },
   "keywords": [
     "pi",
